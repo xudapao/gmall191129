@@ -17,6 +17,7 @@ public class UserController {
   @Autowired UserService userService;
 
   @RequestMapping("getReceiveAddressByMemberId")
+  @ResponseBody
   public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(@RequestBody String memberId) {
 
     List<UmsMemberReceiveAddress> umsMemberReceiveAddresses =
