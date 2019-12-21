@@ -1,18 +1,12 @@
-package com.xujh.gmall.user.bean;
+package com.xujh.gmall.bean;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
-/** @author Xu */
 public class UmsMember implements Serializable {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private String id;
-
+  @Id private String id;
   private String memberLevelId;
   private String username;
   private String password;
